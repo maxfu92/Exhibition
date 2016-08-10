@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/panelBackgroud"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".declaration.ServiceEvaluationActivity">
+
+        <LinearLayout
+            android:id="@+id/rating_panel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="？android:attr/ratingBarStyleIndicator"
+                android:progressDrawable="@drawable/rating_bar"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/rating_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center_vertical"
+                android:text="5.0"
+                android:textSize="28dp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="分"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grid_item_inner_bg"
+                android:maxLength="150"
+                android:padding="5dp"
+                android:gravity="top|left"
+                android:hint="@string/tips_enter_evaluation"
+                android:inputType="textMultiLine"
+                android:lines="10" />
+
+            <TextView
+                android:id="@+id/tv_char_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="5dp"
+                android:padding="3dp"
+                android:text="0/150"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/action_submit"
+        android:textSize="18sp"
+        android:id="@+id/button"
+        android:layout_gravity="bottom"
+        style="@style/AppWidget.Button.Orange" />
+</merge>

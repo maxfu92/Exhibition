@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.tgf.exhidition"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 3
+        versionName "v1.0.3"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':jpush')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.github.citux:datetimepicker:0.2.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.5.3'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.mikepenz:actionitembadge:3.2.5@aar'
+    //SUB-DEPENDENCIES
+    //Android-Iconics - used to provide an easy API for icons
+    compile 'com.mikepenz:iconics-core:2.6.0@aar'
+    compile 'com.mikepenz:fontawesome-typeface:4.4.0.1@aar'
+}

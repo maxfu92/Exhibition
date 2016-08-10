@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_update_url" translatable="false">http://www.51kcwc.com/index/upload_apk/getVersionInfo</string>
+    <string name="app_user_agreementation_url" translatable="false">http://www.51kcwc.com/index/about/userAgreementr</string>
+    <string name="app_about_us" translatable="false">http://www.51kcwc.com/index/about/index</string>
+    <string name="app_name">巡场</string>
+    <string name="title_activity_home">会员中心</string>
+    <string name="title_about_us">关于我们</string>
+    <string name="title_activity_declaration">申报</string>
+    <string name="title_activity_declaration_order">申报订单</string>
+    <string name="title_activity_order_serve">订单服务</string>
+    <string name="title_activity_payfor">确认支付</string>
+    <string name="title_activity_payfor_success">支付成功</string>
+    <string name="title_activity_payfor_failure">支付失败</string>
+    <string name="title_activity_service_evaluation">服务评价</string>
+    <string name="title_activity_order_detail">订单详情</string>
+    <string name="title_activity_prepay_admin">预付款管理</string>
+    <string name="title_activity_order_service_done">上传服务凭证</string>
+
+    <string name="tips_payfor_success_1">恭喜你，订单支付成功！</string>
+    <string name="tips_payfor_success_2">请进入“会员中心 - 申报 - 申报订单”查看申报订单状态。</string>
+    <string name="tips_payfor_failure_1">抱歉，订单支付失败！</string>
+    <string name="tips_payfor_failure_2">请进入“会员中心 - 申报 - 待付款”完成订单支付。</string>
+    <string name="tips_order_signed_up">是否确认签收，申报服务完成？</string>
+    <string name="tips_network_error">当前网络错误</string>
+    <string name="tips_network_unavailable">当前网络不可用</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_moblie">请输入手机号码</string>
+    <string name="prompt_verification_code">请输入验证码</string>
+    <string name="action_get_verification_code">获取验证码</string>
+    <string name="action_get_verification_code2">获取验证(%1$d)</string>
+    <string name="action_view_declaration">查看申报</string>
+    <string name="action_goto_payfor">去付款</string>
+    <string name="action_goback_usercenter">返回会员中心</string>
+    <string name="action_sign_in">登陆</string>
+    <string name="action_logout">退出登陆</string>
+    <string name="action_submit">提交</string>
+    <string name="action_submit_certificates">提交凭证</string>
+    <string name="error_invalid_phone">无效手机号码</string>
+    <string name="error_invalid_verification_code">验证码错误</string>
+    <string name="error_field_required">这是必须滴</string>
+
+    <string name="tips_confirm_submit_free">提交申报后不可线上取消订单，确认提交申报吗？</string>
+    <string name="value_price_free">免费</string>
+    <string name="value_string_price">￥&#160;%1$s</string>
+    <string name="value_float_price">￥&#160;%1$.2f</string>
+    <string name="label_detail_title1">订单记录</string>
+    <string name="label_detail_title2">服务完成凭证</string>
+    <string name="label_person_title1">服务执行人</string>
+    <string name="label_person_title2">申请人</string>
+    <string name="label_positive">是的</string>
+    <string name="label_negative">不</string>
+    <string name="label_positive2">确认</string>
+    <string name="label_negative2">取消</string>
+    <string name="label_pay_for">付款</string>
+    <string name="label_signed">签收</string>
+    <string name="label_feedback">评价</string>
+    <string name="label_feedbacked">已评价</string>
+    <string name="label_finished">已完成</string>
+    <string name="label_dqr">待确认</string>
+    <string name="label_dfw">待服务</string>
+    <string name="label_dfk">待付款</string>
+    <string name="label_cancel_declaration">取消申报</string>
+    <string name="label_submit_declaration">提交申报</string>
+    <string name="label_yfk">预付款</string>
+    <!--  ￥：&#165; -->
+    <string name="object_used_size">%1$.2f&#160;㎡</string>
+    <string name="label_total_price">&#165;&#160;%1$.2f</string>
+    <string name="label_remaind_money">(还剩余&#160;&#160;&#165;&#160;%1$.2f)</string>
+    <string name="label_wxzf">微信支付</string>
+    <string name="label_confirm_payfor">确认支付</string>
+    <string name="label_delete_order">删除订单</string>
+    <string name="label_cancel_order">取消订单</string>
+    <string name="label_complaints">投诉</string>
+    <string name="label_complaints2">我要投诉</string>
+    <string name="label_comments">评价</string>
+    <string name="label_comments2">我要评价</string>
+    <string name="label_contact_service">联系服务</string>
+    <string name="label_user_nickname">昵称</string>
+    <string name="label_char_count">(%1$d/%2$d)</string>
+
+    <string name="label_user_sex">性别</string>
+    <string name="label_male">男</string>
+    <string name="label_female">女</string>
+    <string name="label_next">下一步</string>
+    <string name="label_finish">完成</string>
+    <string name="lable_security">保密</string>
+    <string name="tips_upload_success">数据上传成功</string>
+    <string name="tip_upload_failure">数据上传失败</string>
+    <string name="tips_uploading_file">上传中（%1$d / %2$d）</string>
+    <string name="tips_confirm_payfor_order">完成支付后不可线上退款，确认支付吗？</string>
+    <string name="tips_confirm_delete_order">请确认是否删除[%1$s]订单？</string>
+    <string name="tips_confirm_cancel_order">请确认是否取消[%1$s]订单？</string>
+    <string name="tips_no_pay_order_info">没有支付订单信息</string>
+    <string name="tips_enter_nickname">请输入您的昵称</string>
+    <string name="tips_enter_evaluation">请输入您的评价</string>
+    <string name="tips_enter_sevice_comments">请输入您的文字描述</string>
+    <string name="tips_submit_success">数据提交成功</string>
+    <string name="tips_feature_not_ready">新功能敬请期待</string>
+    <string name="tips_data_load_faild">数据加载失败</string>
+    <string name="tips_data_load_success">数据加载失败</string>
+    <string name="tips_head_picture_saved">头像已保存</string>
+    <string name="tips_head_picture_faild">头像保存失败</string>
+    <string name="tips_head_picture_load_faild">头像加载失败</string>
+    <string name="tips_no_user_id">用户ID为空</string>
+    <string name="title_activity_tgf_settings">TgfSettingsActivity</string>
+
+    <string name="navigation_drawer_open">打开菜单</string>
+    <string name="navigation_drawer_close">关闭菜单</string>
+    <string name="tips_logining">登陆中</string>
+    <string name="update_old_version">旧版本：%1$s</string>
+    <string name="update_new_version">新版本： %1$s</string>
+    <string name="update_has_new_version">巡场应用有新版本啦</string>
+    <string name="update_click_download">点击下载</string>
+    <string name="user_agreementation">用户协议</string>
+
+    <string name="about_xc">关于巡场</string>
+    <string name="about_xc_content">
+        巡场，为适用于大型展会的场景管理系统，同时支持小型活动的高效管理（安全，品质，推广评估，客户互动），
+        可为展会及活动组织者提供管理支持，提升管理水平，是展会行业的创新工具系统。\n\n巡场APP的所有权和运作
+        权归重庆泰工富业科技发展有限公司所有。
+    </string>
+    <string name="about_xczx">现场咨询</string>
+    <string name="about_xczx_person">
+        杨春燕
+        \n18523382277
+    </string>
+    <string name="about_ywzx">业务咨询</string>
+    <string name="about_ywzx_person">
+        肖毅
+        \n13983038001
+    </string>
+    <string name="about_jszc">技术支持</string>
+    <string name="about_jszc_person">
+        但玉琴
+        \n18716366116
+    </string>
+    <string name="submit_error_time">起始结束时间有误</string>
+    <string name="notic_payfor">注释：
+        \n1.&#160;完成支付后不可线上退款，请再次确认后支付。
+        \n2.&#160;如需取消订单请到北登陆厅组委会服务中心进行办理，期间以产生的费用将不会返还。</string>
+</resources>

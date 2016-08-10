@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="item_count" format="integer" />
+    <attr name="label" format="string" />
+    <attr name="show_checkbox" format="boolean" />
+    <attr name="show_endtime" format="boolean" />
+    <attr name="action_panel_layout" format="reference" />
+
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="item_count" />
+    </declare-styleable>
+
+    <declare-styleable name="DatetimePickerView">
+        <attr name="label" />
+        <attr name="full_view_clickable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="DeclarationOrderView">
+        <attr name="show_checkbox" />
+        <attr name="show_endtime" />
+        <attr name="action_panel_layout" />
+    </declare-styleable>
+
+    <declare-styleable name="DeclarationServiceOrderView">
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="windowBackgroud">#F0F0F0</color>
+    <color name="panelBackgroud">#fffcfc</color>
+
+    <!-- toolbar（actionbar）颜色 -->
+    <color name="colorPrimary">#F8F8F8</color>
+    <!-- 状态栏颜色 -->
+    <color name="colorPrimaryDark">#F0F0F0</color>
+    <color name="colorAccent">#6f9c57</color>
+    <color name="colorControlNormal">#f6c975</color>
+
+    <color name="orange">#d46a30</color>
+    <color name="orange_pressed">#78d46a30</color>
+    <color name="orange_disabled">#37d46a30</color>
+
+    <color name="gray_light">#ffd6d7d7</color>
+    <color name="gray_light_pressed">#78d6d7d7</color>
+    <color name="gray_light_disabled">#37d6d7d7</color>
+
+    <color name="devider">#E0E0E0</color>
+    <color name="timeLine">#c0c0c0</color>
+    <color name="grid_item_outer_bg">#fffffbf0</color>
+    <color name="grid_item_divider">#ffd3dde6</color>
+</resources>

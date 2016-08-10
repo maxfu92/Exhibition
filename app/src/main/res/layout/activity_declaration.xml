@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/panelBackgroud"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/iv_scene_logo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/loading_icon" />
+
+        <TextView
+            android:id="@+id/tv_scenes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="2016重庆国际汽车工业展"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/panelBackgroud"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_dfk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.25"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/grid_item_inner_bg">
+
+            <ImageView
+                android:id="@+id/iv_dfk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/btn_dfk_normal"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_dfk"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15.0dip"
+                android:maxLines="1"
+                android:textSize="14.0sp"
+                android:text="@string/label_dfk" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_dfw"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.25"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/grid_item_inner_bg">
+
+            <ImageView
+                android:id="@+id/iv_dfw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_dfw_normal"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:maxLines="1"
+                android:textSize="14.0sp"
+                android:text="@string/label_dfw" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_dqr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.25"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/grid_item_inner_bg">
+
+            <ImageView
+                android:id="@+id/iv_dqr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_dqr_normal"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:maxLines="1"
+                android:textSize="14.0sp"
+                android:text="@string/label_dqr" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_dpj"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.25"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/grid_item_inner_bg">
+
+            <ImageView
+                android:id="@+id/iv_dpj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_dpj_normal"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:maxLines="1"
+                android:textSize="14.0sp"
+                android:text="@string/label_finished" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/panelBackgroud"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <com.tgf.exhibition.widget.MGridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="0.0dip"
+            android:listSelector="@null"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0.0dip" />
+    </ScrollView>
+</LinearLayout>

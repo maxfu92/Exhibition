@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:background="@drawable/grid_item_inner_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <TextView
+        style="?android:textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:text="订单名称:" />
+    <TextView
+        style="?android:textAppearanceMedium"
+        android:id="@+id/tv_order_title"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textSize="18sp"
+        android:text="押金金额" />
+</LinearLayout>

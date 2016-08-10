@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".declaration.SubmitOrderActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/panelBackgroud"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grid_item_inner_bg2"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="6dp"
+                        android:text="科目" />
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grid_item_inner_bg2"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="6dp"
+                        android:text="单位" />
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grid_item_inner_bg2"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="6dp"
+                        android:text="单价" />
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grid_item_inner_bg2"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="6dp"
+                        android:text="押金" />
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/grid_item_inner_bg2"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="6dp"
+                        android:text="说明" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_apply_item_name"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grid_item_inner_bg2"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:text="展期用电" />
+
+                    <TextView
+                        android:id="@+id/tv_unit"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grid_item_inner_bg2"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:text="V / A" />
+
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            style="?android:textAppearanceSmall"
+                            android:paddingBottom="6dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="6dp"
+                            android:paddingTop="6dp"
+                            android:background="@drawable/grid_item_inner_bg2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="130.00" />
+
+
+                        <TextView
+                            android:id="@+id/tv_deposit"
+                            style="?android:textAppearanceSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/grid_item_inner_bg2"
+                            android:paddingBottom="6dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="6dp"
+                            android:paddingTop="6dp"
+                            android:text="130.00" />
+
+                    <TextView
+                        android:id="@+id/tv_intro"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grid_item_inner_bg2"
+                        android:ems="400"
+                        android:minLines="3"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="6dp"
+                        android:text="这是该科目在后台录入的说明，200字数限制。折行显示——多行显示的效果" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/panelBackgroud"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="申请数量" />
+
+                    <com.tgf.exhibition.widget.ControlNumberView
+                        android:id="@+id/cnt_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/edittext_bg"
+                        android:maxWidth="200dp"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/object_square_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="8dp" >
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="使用面积" />
+
+                    <TextView
+                        style="?android:textAppearanceMedium"
+                        android:id="@+id/object_square"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="@string/object_used_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="费用金额" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥" />
+
+                    <TextView
+                        android:id="@+id/tv_total_price"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="130.00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="押金金额" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥" />
+
+                    <TextView
+                        android:id="@+id/tv_total_deposit"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="130.00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="合计" />
+
+                    <TextView
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥"
+                        android:textSize="14dp"
+                        android:textColor="@color/orange" />
+
+                    <TextView
+                        android:id="@+id/tv_total_all"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="130.00"
+                        android:textSize="24dp"
+                        android:textColor="@color/orange" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.tgf.exhibition.widget.DatetimePickerView
+                android:id="@+id/dpv_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/panelBackgroud"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                app:label="开始时间"
+                app:full_view_clickable="true" />
+
+            <com.tgf.exhibition.widget.DatetimePickerView
+                android:id="@+id/dpv_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/panelBackgroud"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                app:label="结束时间"
+                app:full_view_clickable="true" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/panelBackgroud"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_submit_declaration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_submit_declaration"
+            style="@style/AppWidget.Button.Orange" />
+    </LinearLayout>
+
+</merge>
